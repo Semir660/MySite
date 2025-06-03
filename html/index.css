@@ -22,6 +22,11 @@ body {
 .navbar {
     background: linear-gradient(135deg, #e60000, #000000);
     padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .nav-menu {
@@ -55,7 +60,7 @@ body {
 
 /* Sections */
 .section {
-    padding: 20px 0;
+    padding: 50px 0;
 }
 
 .section.active {
@@ -316,7 +321,23 @@ th {
         transform: translateY(-50%);
     }
 
-    .nav-menu {
+.nav-menu {
+    display: flex;
+    flex-wrap: wrap;         /* erlaubt Zeilenumbruch */
+    justify-content: center; /* zentriert Inhalte */
+    gap: 1rem;
+    background: linear-gradient(135deg, #e60000, #990000);
+    padding: 1rem 0;
+}
+
+.nav-item {
+    flex: 1 1 40%;            /* 2 pro Zeile bei kleiner Breite */
+    text-align: center;
+}
+
+
+
+    /*.nav-menu {
         position: fixed;
         left: -100%;
         top: 70px;
@@ -331,7 +352,7 @@ th {
 
     .nav-menu.active {
         left: 0;
-    }
+    }*/
 
     .nav-item {
         margin: 1rem 0;
@@ -422,3 +443,8 @@ input:focus,
 textarea:focus {
     outline: none;
 }
+
+/*html, body {
+    height: 100%;
+    overflow: hidden;
+}*/
