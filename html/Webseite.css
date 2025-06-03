@@ -427,6 +427,5 @@ textarea:focus {
 
 .nav-link.active {
     text-decoration: underline;
-    background-color: rgb(255, 255, 255); /* optionaler Effekt */
-    border-bottom: 2px solid white;             /* deutlich sichtbarer Balken */
+    text-decoration-color: white;
 }
