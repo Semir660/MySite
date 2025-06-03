@@ -53,6 +53,11 @@ body {
     cursor: pointer;
 }
 
+.nav-link.active {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
 /* Main Content */
 .main-content {
     padding: 20px 0;
@@ -423,9 +428,4 @@ th {
 input:focus,
 textarea:focus {
     outline: none;
-}
-
-.nav-link.active {
-    text-decoration: underline;
-    text-decoration-color: white;
 }
